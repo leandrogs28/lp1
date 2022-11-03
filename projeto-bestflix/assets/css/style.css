@@ -1,12 +1,12 @@
 
 :root{
-    --primary: #713bb8;
-    --secundary: #713bb8;
-    --secundary-dark: #652888;
-    --grey-0:rgb(134, 134, 134);
+    --primary: #9f16df;
+    --secundary: #5e03f1;
+    --secundary-dark: #4e09ce;
+    --grey-0:#000;
     --grey-200:#363434;
-    --grey-400:#292828;
-    --grey-600: #000000;
+    --grey-400:#4b4a4a;
+    --grey-600: #cabbbb;
     --grey-800: #d3d3d3;
     --grey-1000: #fff;
 }
@@ -185,7 +185,7 @@ body > header {
 #productions .card-movie div div img {
     width: 22px;
     height: 22px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #productions .card-movie div div {

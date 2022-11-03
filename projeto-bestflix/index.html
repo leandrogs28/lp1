@@ -89,6 +89,28 @@
             </form>
         </div>
     </div>
+
+    <div class="modal" id="modal-editar" onclick="hideModal('#modal-editar', event)">
+        <div class="modal-body">
+            <h1>Editar Produção</h1>
+
+            <form onsubmit="edit(event)">
+                <label>Title:</label>
+                <input type="text" name="title">
+                <label>Description:</label>
+                <input type="text" name="description">
+                <label>Category:</label>
+                <input type="text" name="category">
+                <label>Cover:</label>
+                <input type="text" name="cover">
+                <label>Classification:</label>
+                <input type="text" name="classification">
+                <input type="hidden" name="id">
+                <button type="submit">Editar</button>
+            </form>
+        </div>
+    </div>
+    
     <script src="assets/js/main.js"></script>
 </body>
 </html>

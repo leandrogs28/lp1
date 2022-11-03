@@ -1,29 +1,28 @@
 <?php
-    require('database.php');
+    require ('database.php');
 
-    try{
+    try {
         $id = '';
-        if(isset($_GET['id'])){
+        if (isset($_GET['id'])) {
             $id = $_GET['id'];
         }
 
-        $stmt = $conn->preapre("DELETE FROM producoes WHERE id = :id;");
+        $stmt = $conn->prepare("DELETE FROM producoes WHERE id = :id;");
         $stmt->bindParam(':id', $id);
         $stmt->execute();
 
         $count = $stmt->rowCount();
 
-        if($count == 1){
-            $result["success"]["messege"] = "Produção deletada com sucesso!";
-        } else{
-            $result["error"]["message"] = "ID:
-            $id não encontrado!";
+        if ($count == 1) {
+            $result["success"]["message"] = "Produção deletada com sucesso!";
+        } else {
+            $result["error"]["message"] = "ID: $id não encontrado!";
         }
 
-        header('Content-Type: text/json');
+        header('Content-Type: Text/json');
         echo json_encode($result);
-    } catch(PDOException $e) {
-        echo "Connection failed " .
-        $e->getMessege();
+
+    } catch (PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
     }
 ?>
