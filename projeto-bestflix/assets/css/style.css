@@ -1,8 +1,8 @@
 
 :root{
-    --primary: #9f16df;
+    --primary: #6d00c7;
     --secundary: #5e03f1;
-    --secundary-dark: #4e09ce;
+    --secundary-dark: #4c00ff;
     --grey-0:#000;
     --grey-200:#363434;
     --grey-400:#4b4a4a;
@@ -205,7 +205,7 @@ body > footer {
 }
 
 .modal{
-    background: #0c0c0c85;
+    background: #00000085;
     position: absolute;
     display: none;
     top: 0;
