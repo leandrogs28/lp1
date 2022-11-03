@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Out-2022 às 00:39
+-- Tempo de geração: 03-Nov-2022 às 21:55
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -37,6 +37,15 @@ CREATE TABLE `producoes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Extraindo dados da tabela `producoes`
+--
+
+INSERT INTO `producoes` (`id`, `titulo`, `descricao`, `categoria`, `capa`, `classificacao`) VALUES
+(6, 'A Mulher Rei', 'bom', 'Aventura', 'https://vizer.tv/content/movies/posterPt/342/38762.webp', '16'),
+(7, 'Homem-Aranha: Sem Volta Para Casa', 'Melhor filme!!!!!!!!', 'Ação', 'https://vizer.tv/content/movies/posterPt/342/27820.webp', '14'),
+(8, 'Thor: Amor e Trovão', 'bom', 'Ação', 'https://vizer.tv/content/movies/posterPt/342/27824.webp', '16');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -54,7 +63,7 @@ ALTER TABLE `producoes`
 -- AUTO_INCREMENT de tabela `producoes`
 --
 ALTER TABLE `producoes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
